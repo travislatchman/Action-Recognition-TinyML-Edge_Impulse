@@ -1,17 +1,9 @@
 # Action-Recognition-TinyML-Edge_Impulse
 
-Deploying neural networks to embedded devices for gesture recognition to detect motion gestures 
-train and use machine learning models with the Arduino Nano 33 BLE Sense for motion gesture recognition
+- Use machine learning to build a gesture recognition system that runs on a microcontroller. 
+  - Creating embedded ML applications and running Edge Computing applications (AI) using TinyML
+- Developing and training neural networks and deploying to embedded devices 
 
-
-create your machine learning models using TensorFlow™ Lite and upload them
-use machine learning to build a gesture recognition system that runs on a microcontroller. 
-
-
-creating embedded ML application
-running Edge Computing applications (AI) on it using TinyML
-optimize architecture of neural network model using EdgeImpulse.
-platform for developing embedded and edge ML (TinyML) systems that can be deployed to a wide range of hardware targets.
 
 
 - The target gestures for classification are: 
@@ -20,17 +12,15 @@ platform for developing embedded and edge ML (TinyML) systems that can be deploy
 
 ## Gesture Recognition with Arduino Nano 33 BLE and TensorFlow Lite
 
-Utilize an Arduino Nano 33 BLE or Arduino Nano 33 BLE Sense board to capture data from its onboard IMU (Inertial Measurement Unit) and classify movement as one of the predefined gestures using TensorFlow Lite for Microcontrollers.
+Train and use machine learning models with the Arduino Nano 33 BLE Sense for motion gesture recognition
+create your machine learning models using TensorFlow™ Lite and upload them
 
-## Gesture Recognition Training a TensorFlow Lite Micro Model For Arduino
+Utilize an Arduino Nano 33 BLE or Arduino Nano 33 BLE Sense board to capture data from its onboard IMU (Inertial Measurement Unit) and classify movement as one of the predefined gestures using TensorFlow Lite for Microcontrollers.
 
 Gesture Recognition Training a TensorFlow Lite Micro Model For Arduino where a custom model is trained
 on data captured from an Arduino Nano 33 BLE Sense.
 
-### i. Gesture Selection & Data Recording
-### Streaming Sensor Data From the Arduino Board
-
-
+### i. Gesture Selection & Streaming Sensor Data
 
 You can seamlessly retrieve sensor data logs directly from the Arduino board. This can be achieved utilizing the same USB cable that's typically employed to program the board, connected to your laptop or PC.
 
@@ -42,7 +32,6 @@ You can seamlessly retrieve sensor data logs directly from the Arduino board. Th
 
 - Capturing Gesture Training Data
 To capture data as a CSV log to upload to TensorFlow
-
 
 
 ### ii. Data Visualization
@@ -60,22 +49,15 @@ With that done we can now visualize the data coming off the board.
 ![image](https://github.com/travislatchman/Action-Recognition-TinyML-Edge_Impulse/assets/32372013/1520ab1d-a423-493e-b5a7-9169b61c3bc4)
 
 
-
-
-
-
 ### iii. Model Training in TensorFlow
 
-Upload the punch.csv and flex.csv data
+Upload the `StirringPot_LatchmanT.csv` and `MakingTea_LatchmanT.csv` data
 Parse and prepare the data
 Build and train the model
 Convert the trained model to TensorFlow Lite
 Encode the model in an Arduino header file
-The final step of the colab is generates the model.h file 
+Generate the model.h file 
 
-Train your model using TensorFlow.
-Upload model to Arduino device and do inference on device displaying result on a
-screen
 
 
 ### iv. Inference on Arduino Device
@@ -83,19 +65,14 @@ screen
 **`imu_classifier.ino`**
 - Upload the trained model to your Arduino device.
 - Perform inference directly on the device and display the results on a screen.
-
 - Continually checks for notable motion through acceleration values extracted from the IMU.
 - With sufficient samples, the TensorFlow Lite model gets activated to categorize the gesture.
-- Subsequently, the outcome, representing the likelihoods of each gesture, is outputted to the Serial monitor.
-  
-- The TensorFlow Lite model in use can be located in the `model.h` file.
-- It's plausible that this model underwent training outside using IMU data representing the gestures before being converted to the TensorFlow Lite format.
-2. Incorporate the `model.h` file that contains the TensorFlow Lite model.
-3. Upload the code onto an Arduino Nano 33 BLE or Arduino Nano 33 BLE Sense board.
-4. Manipulate the board matching the patterns of the recognized gestures and observe the classification outcomes on the Serial monitor.
+- The outcome/confidence orepresenting the likelihoods of each gesture, is printed to the Serial Monitor (0 = low confidence, 1 = high confidence) 
+- The TensorFlow Lite model in use can be located in the `model.h` file. Incorporate the `model.h` file that contains the TensorFlow Lite model.
+- Upload the code onto an Arduino Nano 33 BLE or Arduino Nano 33 BLE Sense board.
+- Manipulate the board matching the patterns of the recognized gestures and observe the classification outcomes on the Serial monitor.
 
-  Perform some gestures
-The confidence of each gesture will be printed to the Serial Monitor (0 = low confidence, 1 = high confidence)
+
 
 ![image](https://github.com/travislatchman/Action-Recognition-TinyML-Edge_Impulse/assets/32372013/3f760058-f7dd-4e43-8857-8e476798d0a7)
 
@@ -156,13 +133,14 @@ And had the following performance in training:
 
 ## Cloud Based ML: Edge Impulse
 
-Perform the kitchen actions that you did in Lab 2 to collect data using EdgeImpulse, build a model and run inference on Arduino Nano 33 BLE Sense.
+- Platform for developing embedded and edge ML (TinyML) systems that can be deployed to a wide range of hardware targets.
+- 
+- Perform the kitchen actions to collect data using Edge Impulse
 
-collect high-frequency data from real sensors, use signal processing to clean up data, build a neural network classifier, and how to deploy your model back to a device.
+- collect high-frequency data from real sensors, use signal processing to clean up data, build a neural network classifier, and how to deploy your model back to a device.
 
 ### Collecting your first data
-With your device connected, we can collect some data
-sampling move your device up and down in a continuous motion. 
+- With your device connected, we can collect some data
 
 ![image](https://github.com/travislatchman/Action-Recognition-TinyML-Edge_Impulse/assets/32372013/8b3ec8a4-7add-4e22-9f78-1de8eb801f52)
 
