@@ -1,6 +1,16 @@
 # Action-Recognition-TinyML-Edge_Impulse
 
- use machine learning to build a gesture recognition system that runs on a microcontroller. 
+Deploying neural networks to embedded devices for gesture recognition to detect motion gestures 
+
+use machine learning to build a gesture recognition system that runs on a microcontroller. 
+
+o	developing embedded and edge ML (TinyML) systems 
+o	 build embedded ML application for motion gesture action recognition
+developing embedded and edge ML (TinyML) motion gestion/actionr recogition system
+
+AI using  TensorFlow Lite for Microcontrollers TinyML and
+![image](https://github.com/travislatchman/Action-Recognition-TinyML-Edge_Impulse/assets/32372013/f4daf484-4b77-4b35-9fb9-46a230ff7554)
+
 
 - The target gestures for classification are: 
   - **`StirringPot_LatchmanT`**
