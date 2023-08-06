@@ -1,15 +1,17 @@
 # Action-Recognition-TinyML-Edge_Impulse
 
 Deploying neural networks to embedded devices for gesture recognition to detect motion gestures 
+train and use machine learning models with the Arduino Nano 33 BLE Sense for motion gesture recognition
 
+
+create your machine learning models using TensorFlow™ Lite and upload them
 use machine learning to build a gesture recognition system that runs on a microcontroller. 
 
-o	developing embedded and edge ML (TinyML) systems 
-o	 build embedded ML application for motion gesture action recognition
-developing embedded and edge ML (TinyML) motion gestion/actionr recogition system
 
-AI using  TensorFlow Lite for Microcontrollers TinyML and
-![image](https://github.com/travislatchman/Action-Recognition-TinyML-Edge_Impulse/assets/32372013/f4daf484-4b77-4b35-9fb9-46a230ff7554)
+creating embedded ML application
+running Edge Computing applications (AI) on it using TinyML
+optimize architecture of neural network model using EdgeImpulse.
+platform for developing embedded and edge ML (TinyML) systems that can be deployed to a wide range of hardware targets.
 
 
 - The target gestures for classification are: 
