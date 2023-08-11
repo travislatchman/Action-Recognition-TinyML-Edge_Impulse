@@ -12,19 +12,17 @@
 
 ## Gesture Recognition with Arduino Nano 33 BLE and TensorFlow Lite
 
-Train and use machine learning models with the Arduino Nano 33 BLE Sense for motion gesture recognition
-create your machine learning models using TensorFlow™ Lite and upload them
+Train and use machine learning models with the Arduino Nano 33 BLE Sense for motion gesture recognition.
 
 Utilize an Arduino Nano 33 BLE or Arduino Nano 33 BLE Sense board to capture data from its onboard IMU (Inertial Measurement Unit) and classify movement as one of the predefined gestures using TensorFlow Lite for Microcontrollers.
 
-Gesture Recognition Training a TensorFlow Lite Micro Model For Arduino where a custom model is trained
-on data captured from an Arduino Nano 33 BLE Sense.
+
 
 ### i. Gesture Selection & Streaming Sensor Data
 
 You can seamlessly retrieve sensor data logs directly from the Arduino board. This can be achieved utilizing the same USB cable that's typically employed to program the board, connected to your laptop or PC.
 
-- Two common kitchen tasks were used as Chosen gestures. selected actions attach the nano-sense BLE to your hand and record several instances of the actions
+- Two common kitchen tasks were used as chosen gestures.
 
 - Attach the nano-sense BLE to your hand and record several instances of these actions.
 
@@ -35,11 +33,10 @@ To capture data as a CSV log to upload to TensorFlow
 
 
 ### ii. Data Visualization
-capturing the data by visualizing the data in the Arduino device. 
-- Ensure your data is being captured correctly by visualizing it in the Arduino device.
+Capturing the data by visualizing the data in the Arduino device. 
 
 Visualizing Live Sensor Data Log From the Arduino Board
-With that done we can now visualize the data coming off the board.
+
 
 - *Stirring Pot Visualization*
 ![image](https://github.com/travislatchman/Action-Recognition-TinyML-Edge_Impulse/assets/32372013/83b99636-6e17-45ec-9bf3-e63243ead9bf)
@@ -51,14 +48,12 @@ With that done we can now visualize the data coming off the board.
 
 ### iii. Model Training in TensorFlow
 
-Upload the `StirringPot_LatchmanT.csv` and `MakingTea_LatchmanT.csv` data
-Parse and prepare the data
-Build and train the model
-Convert the trained model to TensorFlow Lite
-Encode the model in an Arduino header file
-Generate the model.h file 
-
-
+- Upload the `StirringPot_LatchmanT.csv` and `MakingTea_LatchmanT.csv` data
+- Parse and prepare the data
+- Build and train the model
+- Convert the trained model to TensorFlow Lite
+- Encode the model in an Arduino header file
+- Generate the model.h file 
 
 ### iv. Inference on Arduino Device
 
